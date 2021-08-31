@@ -92,3 +92,65 @@ body {
 .countdown #second:before {
   content: "Seconds";
 }
+
+@media screen and (max-width: 800px) {
+  .container h2{
+    font-size: 8em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container h2 {
+    font-size: 8em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    position: absolute;
+    top: 80px;
+    left: 35px;
+    right: 35px;
+    bottom: 80px;
+  }
+
+  .container h2 {
+    font-size: 4em;
+  }
+
+  .container h2 span {
+    font-size: 0.3em;
+  }
+
+  .countdown div {
+    width: 60px;
+    height: 80px;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .countdown div::before {
+    position: absolute;
+    bottom: -33px;
+    font-size: 0.25em;
+  }
+
+  .countdown #second:before {
+    content: "Sec";
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container h2 {
+    font-size: 3em;
+  }
+
+  .countdown div {
+    width: 50px;
+    font-size: 2em;
+    text-align: center;
+  }
+  .countdown div::before {
+    position: absolute;
+    font-size: 0.25em;
+  }
+}
